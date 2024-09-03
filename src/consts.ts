@@ -16,7 +16,7 @@ interface LanguageConstants {
 }
 
 const zhConstants: LanguageConstants = {
-  SITE_TITLE: "星界",
+  SITE_TITLE: "高唐",
   SITE_DESCRIPTION:
     "星界 - 增强版astro主题，适用于视觉博客，多语言支持助力全球受众。",
   TAGS_TITLE: "星界 - 所有标签",
@@ -61,7 +61,7 @@ export function getConstants(lang: "zh" | "en"): LanguageConstants {
 export function getTagMetadata(tag: string, lang: "zh" | "en") {
   if (lang === "zh") {
     return {
-      title: `星界中'${tag}'主题的所有文章`,
+      title: `高唐'${tag}'主题的所有文章`,
       description: `浏览星界关于${tag}的文章。`,
     };
   } else {
@@ -75,7 +75,7 @@ export function getTagMetadata(tag: string, lang: "zh" | "en") {
 export function getCategoryMetadata(category: string, lang: "zh" | "en") {
   if (lang === "zh") {
     return {
-      title: `星界'${category}'相关的文章`,
+      title: `高唐'${category}'相关的文章`,
       description: `在星界中浏览有关${category}主题的所有文章`,
     };
   } else {
